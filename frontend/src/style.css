@@ -1,0 +1,96 @@
+.whp100 {
+  width: 100%;
+  height: 100%;
+}
+.wp100 {
+  width: 100%;
+}
+.hp100 {
+  height: 100%;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+html, body {
+  margin: 0;
+}
+
+body  {
+  background-color: #101922;
+  max-width: 100%;
+}
+
+input[type="password"] {
+  font-family: "Segoe UI", Arial, Helvetica, "PingFang SC",
+  "Microsoft YaHei", sans-serif !important;
+  letter-spacing: normal !important;
+  font-variant-ligatures: none;
+  font-kerning: none;
+}
+
+
+::-webkit-scrollbar{
+  width: 4px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDDEE0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C7C9CC;
+}
+
+/* 菜单主体 */
+.n-dropdown-menu {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #1E293B;
+  /*border: 1px solid #475569;*/
+}
+/* 菜单选项本体 */
+.n-dropdown-option-body {
+  margin: 5px;
+}
+
+/* 菜单选项本体hover */
+.n-dropdown-option-body--pending {
+  /*background-color: ;*/
+  --n-option-color-hover: #334155 !important;
+}
+
+/* 菜单选项本体before */
+.n-dropdown-menu .n-dropdown-option .n-dropdown-option-body::before {
+  border-radius: 8px;
+}
+/* 菜单选项文字 */
+.n-dropdown-option-body__label,
+/* 菜单选项icon */
+.n-dropdown-menu .n-dropdown-option .n-dropdown-option-body .n-dropdown-option-body__prefix {
+  color: #F1F5F9;
+}
+/* 菜单选项icon hover */
+.n-dropdown-menu .n-dropdown-option .n-dropdown-option-body:not(.n-dropdown-option-body--disabled).n-dropdown-option-body--pending .n-dropdown-option-body__prefix, .n-dropdown-menu .n-dropdown-option .n-dropdown-option-body:not(.n-dropdown-option-body--disabled).n-dropdown-option-body--pending .n-dropdown-option-body__suffix {
+  color: #F1F5F9;
+}
+/* 菜单分割线 */
+.n-dropdown-menu .n-dropdown-divider {
+  background-color: aliceblue;
+  opacity: 0.1;
+}

@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+}
+
+/* 修复：仅作用于密码框，避免 Emoji/Symbol fallback 造成的“间距异常” */
+input[type="password"] {
+    font-family: "Segoe UI", Arial, Helvetica, "PingFang SC",
+    "Microsoft YaHei", sans-serif !important;
+    letter-spacing: normal !important;
+    font-variant-ligatures: none;
+    font-kerning: none;
+}

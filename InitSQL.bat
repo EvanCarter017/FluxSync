@@ -1,0 +1,1 @@
+docker exec -i mysql mysql -uroot -pfluxsync  < C:/Users/Esther/Desktop/workspace/active/FluxSync/mysql/init.sql

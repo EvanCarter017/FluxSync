@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: Fluxsync
+  data:
+    redis:
+      host: localhost
+      port: 1002
+      database: 0
+      timeout: 2s
+      password: fluxsync
+
+
+server:
+  port: ${PORT:1003}
+
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(${PID:- }){magenta} --- [%clr(%15.15t){cyan}] %clr(%-40.40logger{39}){blue} : %msg [%F:%L]%n"
+
+  level:
+    root: INFO
+    com.esther.fluxsync: DEBUG
+
+app:
+  datasource:
+    fluxsync:
+      jdbc-url: "jdbc:mysql://localhost:3306/?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai"
+      username: "root"
+      password: "fluxsync"
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+  services:
+    jwt:
+      url: "http://localhost:1007"
+      uri: "/api/security/jwt/issue"

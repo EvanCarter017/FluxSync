@@ -1,0 +1,19 @@
+.progress-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*margin-left: 18px;*/
+    padding: 0 15px;
+    /*background-color: rgba(240, 248, 255, 0.1);*/
+    border-radius: 13px;
+}
+
+.progress {
+    width: 100% !important;
+}
+
+.progress-box:hover {
+    background-color: rgba(240, 248, 255, 0.2);
+    cursor: pointer;
+}
